@@ -15,3 +15,13 @@ Examples:
 
 
 // Solution
+
+const twistedSum = (n) => {
+  let sum = 0;
+  for (let i = 1; i <= n; i++) {
+    sum += String(i)
+      .split('')
+      .reduce((tot, el) => (tot += Number(el)), 0);
+  }
+  return sum;
+};
