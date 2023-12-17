@@ -25,3 +25,5 @@ const twistedSum = (n) => {
   }
   return sum;
 };
+
+// or
